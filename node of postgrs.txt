@@ -110,3 +110,46 @@ section : 03
 
 ============================( TASK -1 : Create New Table) ===================================
     
+
+
+
+section : 04
+=============
+    . clauses 
+        . WHERE
+        . Distinct
+        . Order By
+        . Limit
+        . Like
+
+    we have relational operators 
+        . < - less than
+        . > - Greater than
+        . <= - Less than or equal to
+        . >= - Greater than or Equal to
+        . = Equal to
+        . != Not equal to
+    Logical operators 
+        . AND - both must be true
+        . Or - if one correct than return true
+    some other operators
+        . In (multiple or operators)
+        . NOT In (revace in)
+    BETWEEN 
+        . salary BETWEEN 4000 and 5000
+    Distinct    
+        . find Unique value
+    ORDER By
+        . select * from employees order by fname 
+        . select * from employees order by fname desc
+    LIMIT 
+        . select * from employees LIMIT 3;
+    LIKE 
+        . select * from employees where dept like '%Acc%'
+        . Sarts with 'A' : LIKE 'A%'
+        . Ends with 'A' : LIKE '%A'
+        . Contains 'A' : Like '%A%'
+        . second character is 'A' : LIKE '_A%'
+        . Case-insensitive contains 'johon' : ILIKE '%johon%'
+        . select * from employees where dept like '__';
+    
