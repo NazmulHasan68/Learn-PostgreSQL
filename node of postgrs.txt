@@ -56,13 +56,57 @@ section : 02
             => INSERT INTO person(id , name, city) ================================================//
             INSERT into students values (101, 'raju', 'Dhaka');
     -10. c. Modify /update data from a table
-            => UPDATE person
+            => UPDATE person ================================================//
                     SET city = 'London'
                     WHERE id = 1;
     -11 d. DELETE data from a table
-            => DELETE FROM students
+            => DELETE FROM students ================================================//
                 WHERE name = 'Raju';
         
 
 
+section : 03
+=============
+    . Datatypes  => An attribute that specifies the type of data in a column of our databse - table
+                        . Numeric   - Int Double float decimal
+                        . string    - varchar
+                        . Data      - DATE 
+                        . Boolean   - Boolean
+            q/a -- Datatypes = what will happend we store values like 15.35?
+                    .DECIMAL(5, 2) -5= Total digit -2= after point two digit
+                -- Constraint : A constraint in PostgreSQL is a rule applied to column
+                    . the primary key constraint uniquely identifies each record in a table
+                    . primary keys must contain UNIQUE values, and cannot contain NULL values
+                    . A table can have Only primary key
+                -12. -- NOT NULL 
+                    => Create table customers ( ================================================//
+                        id int not null,
+                        name varchar(100) not null
+                    )
+                -13. DEFAULT values
+                    => CREATE TABLE customers (
+                        acc_no int primary key,
+                        name varchar(100) NOT NULL,
+                        acc_type varchar(50) not null Default 'savings'
+                    );
+                -14. AUTO_increment 
+                    => create table employes (
+                            emp_id SERIAL primary key,
+                            fname varchar(100) NOT NULL,
+                            lname varchar(100) NOT NULL,
+                            email varchar(100) NOT NULL UNIQUE,
+                            dept varcher(100),
+                            salary DECIMAL(10,2) DEFAULT 30000.00,
+                            hire_date DATE not null deefault current_Date
+                        );
+
+
+    . Constraint
+        . Primary key
+        . NOT NULL
+        . Default
+        . Serial
+        . Unique
+
+============================( TASK -1 : Create New Table) ===================================
     
