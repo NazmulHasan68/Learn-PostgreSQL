@@ -200,3 +200,35 @@ section : 07
     7. LEFT, RIGHT => SELECT LEFT('HELLO WORLD', 4);
     8. TRIM => SELECT LENGTH(TRIM('   ALRIGHT   '));
     9. POSITION => SELECT POSITION('OM' IN 'THOMAS');
+
+
+
+Exam Q/A :
+=========
+
+    TASK 1 :
+        1: RAJ:SHARMA:IT 
+    TASK 2 :
+        1:RAJU SHARMA:IT : 5000
+    TASK 3 :
+        4:SUMAN:FINANCE
+    TASK 4 :
+        l1 Raju
+        H2 Priya
+Exercise  : distinct, order by, like and limit
+    1. Find Different type of departments in database?
+    2. Display records with Hight-low salary
+    3. How to see only top 3 records from a table?
+    4. show records where first name start with letter 'A'
+    5. Show records where LENGTH of the lname is 4 character
+More :
+    1. Find total no.of employees in database?
+    2. Find no. of employees in each departments
+    3. Find lowest salary paying
+    4. Find hightest salary paying
+    5. FInd total paying in loan department
+    6. Average salary paying in each department
+
+
+section : 08
+=============
