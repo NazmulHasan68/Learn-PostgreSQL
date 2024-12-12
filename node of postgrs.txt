@@ -59,6 +59,9 @@ section : 02
             => UPDATE person
                     SET city = 'London'
                     WHERE id = 1;
+    -11 d. DELETE data from a table
+            => DELETE FROM students
+                WHERE name = 'Raju';
         
 
 
