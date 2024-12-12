@@ -152,4 +152,22 @@ section : 04
         . second character is 'A' : LIKE '_A%'
         . Case-insensitive contains 'johon' : ILIKE '%johon%'
         . select * from employees where dept like '__';
-    
+
+
+section : 05
+=============
+    Aggregate Function => we can calculate
+
+    . How to find total no.of employees
+    . Employee with Max salary
+    . Average salary of employees
+
+    01. count =>  select count(emp_id) from employees;
+    02. sum => select sum(salary) from employees;
+    03. Avg => select avg(salary) from employees;
+    04. min => select min(salary) from employees;
+    05. max => select max(salary) from employees;
+
+
+
+
