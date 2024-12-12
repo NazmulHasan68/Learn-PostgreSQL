@@ -169,5 +169,13 @@ section : 05
     05. max => select max(salary) from employees;
 
 
+section : 06
+=============
+       What is GROUP BY?
+
+       select dept from employees GROUP BY dept
+       select dept , count(fname) from employees GROUP BY dept
+       select dept, sum(salary) from employees group by dept;
+
 
 
