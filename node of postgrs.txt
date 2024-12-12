@@ -1,0 +1,65 @@
+===============================================================================================
+======================================= PostgreSQL ============================================
+===============================================================================================
+
+section : 01
+=============
+1. What is database?
+    --> An organised collection of data, A method to mainpulate and access the data.
+
+2. Database Vs BDMS (PostgreSQL, MySQL, Oracle)
+
+3. What is RDBMS?
+    --> A Type of database system that store data instrucred tables (using rows and colums)
+        and sQL for manging and querying data
+
+4. SQL Vs PostgreSQL
+    --> SQL = structured Query Language which is used to talk to our database
+
+5. Installtion : 
+    Password : 3580
+    port : 5432
+
+    -01. \list || \l == For check All the database
+    -02. |!cls == for clear all database
+    -03. create database <name you database> == for create a database
+    -04. /c test  === switch database from shell
+
+6. DB vs Schema vs tables
+
+
+
+
+
+section : 02
+=============
+
+    1. Database 
+        -> creating , connect , listing, droping
+    2.  a. create - new tabale
+        b. Read - how to Read
+        c. update - data
+        d. Delete data
+    -05. SELECT datname FROM pg_databse 
+    -06. Drop database <db_name>  == for delete existing database
+    -07. a. Create a new tables  ================================================//
+            => CREATE TABLE person(
+                id INT,
+                name VACHAER(100),
+                city VACHAER(100)
+            );
+
+         create table person(id int, name VACHAER(100), city VACHAER(100));
+    -08. \d == go to table
+
+    -09.  b. Adding data into a table
+            => INSERT INTO person(id , name, city) ================================================//
+            INSERT into students values (101, 'raju', 'Dhaka');
+    -10. c. Modify /update data from a table
+            => UPDATE person
+                    SET city = 'London'
+                    WHERE id = 1;
+        
+
+
+    
