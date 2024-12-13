@@ -288,5 +288,14 @@ section : 08
             End as sal_cat
             FROM 
                 employees
+
+        select
+        case 
+            when salary > 45000 then 'High'
+            when salary between 40000 and 44000 then 'Mid'
+            else 'low'
+            end as sal_cat , count(emp_id)
+            from employees
+            group by sal_cat;
     
   
