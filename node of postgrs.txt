@@ -232,3 +232,61 @@ More :
 
 section : 08
 =============
+
+    ALTER Query 
+
+    01. How to add or remove a column
+        ALTer Table contacts
+        Add column city varchar(50)
+
+        ALTer Table contacts
+        drop column city varchar(50)
+
+        alter table person
+        add column age int default 0;
+
+    02. How to rename a column?
+        alter table contacts
+        rename column name to full_name
+    03. How rename a table name?
+        Alter table contacts
+        rename to myContacts;
+
+        rename table contacts to myContacts;
+
+    04. How to modify a column
+        Ex. changing Datatypes
+        or adding Default values etc
+    05. How to add default value to column?
+        alter table person
+        alter column fname
+        set data type varchar(200)
+
+        alter table person
+        alter column fname
+        set default 'unknown';
+
+        alter table person
+        alter column city
+        drop default;
+
+    Constraint CHECK : We want to make sure phone no. is atlest 10 digits..
+
+    create table contacts(
+        name varchar(50)
+        mob varchar(15) unque check (length(mob) >=10)
+    )
+
+
+
+    Expression case ==============================
+        . case 
+            select fname , salary,
+            case 
+                when salary >= 50000 then 'higt'
+                else 'low'
+            End as sal_cat
+            FROM 
+                employees
+    
+  
