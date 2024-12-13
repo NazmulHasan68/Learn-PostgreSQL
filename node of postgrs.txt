@@ -297,5 +297,38 @@ section : 08
             end as sal_cat , count(emp_id)
             from employees
             group by sal_cat;
+
+
+section : 09
+=============
+    Understand Relationship
+        salary  | employees | attendance | requests | offices | TASK
+    types of Relationship
+        1. One to one
+        2. one to many
+        3. many to many
+
+    Let's Understand a use-case of 1:many
     
-  
+    whar is Foreign key
+
+    Understand join ==
+
+    Inner Join => Returns only the rows where there is a match between the specified columns in both the left (or first) and right (or second) tables.
+
+    Inner Join with Group By
+
+    Left Join => Returns all rows from the left (or first) table and the matching rows from the right (or second) table.
+
+    TASK : 
+        Create a one-to-many and many-to-many relationship in a 
+        shopping store context using four tables:
+
+        customers
+        orders
+        products
+        order_items
+        
+        Include a price column in the products table and display the 
+        relationship between customers and their orders, along with the 
+        details of the products in each order.
